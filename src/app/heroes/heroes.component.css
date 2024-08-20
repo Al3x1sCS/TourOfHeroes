@@ -17,16 +17,16 @@
   width: 100%;
 }
 
-/*@media (max-width: 600px) {
+@media (max-width: 600px) {
   .main {
     display: block;
-    gap: 20px; /* Espaçamento entre os elementos 
+    gap: 20px; /* Espaçamento entre os elementos */
     padding: .5rem;
     max-width: 1000px;
     margin: auto;
   }
   .lista-heroes {
-    width: 100%; /* Largura da lista 
+    width: 100%; /* Largura da lista */
     display: flex;
   }
   .info-heroes{
@@ -39,7 +39,23 @@
     height: 125px !important;
     width: 125px !important;
   }
-}*/
+}
+
+@media (min-width: 600px) {
+  .lista-heroes {
+    width: 50%;
+  }
+
+  .info-heroes {
+    width: 40%;
+    margin-left: 20px;
+  }
+
+  .heroes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Garante duas colunas de heróis */
+  }
+}
 
 .heroes {
   margin: 0 0 2em 0;
@@ -47,6 +63,7 @@
   padding: 0;
   display: flex; /* Exibe os itens da lista em linha */
   flex-wrap: wrap; /* Permite que os itens quebrem linha, se necessário */
+  gap: 20px; /* Espaçamento entre os itens */
 }
 
 .heroes li {
