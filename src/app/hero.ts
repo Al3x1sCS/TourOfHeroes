@@ -3,4 +3,5 @@ export class Hero {
     name: string = '';
     description: string = '';
     power: string = '';
+    imageUrl?: string = '';
 }

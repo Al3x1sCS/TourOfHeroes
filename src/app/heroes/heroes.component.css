@@ -2,16 +2,44 @@
   display: flex;
   justify-content: space-between;
   gap: 20px; /* Espaçamento entre os elementos */
+  padding: .5rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .lista-heroes {
-  width: 775px; /* Largura da lista */
+  width: 42%; /* Largura da lista */
   display: flex;
 }
 
 .info-heroes {
   flex-grow: 1; /* O info-heroes vai ocupar o espaço restante */
+  width: 100%;
 }
+
+/*@media (max-width: 600px) {
+  .main {
+    display: block;
+    gap: 20px; /* Espaçamento entre os elementos 
+    padding: .5rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .lista-heroes {
+    width: 100%; /* Largura da lista 
+    display: flex;
+  }
+  .info-heroes{
+    width: 100%;
+  }
+  .heroes {
+    gap: 15px;
+  }
+  .heroes button {
+    height: 125px !important;
+    width: 125px !important;
+  }
+}*/
 
 .heroes {
   margin: 0 0 2em 0;
@@ -61,7 +89,7 @@
   padding: 0.8em 0.7em 0 0.7em;
   background-color: #405061;
   line-height: 1em;
-  margin-right: .8em;
+  /*margin-right: .8em;*/
   border-radius: 10px 0 0 10px;
 }
 
