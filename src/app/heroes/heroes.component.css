@@ -1,66 +1,70 @@
-/* HeroesComponent's private CSS styles */
+.main {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Espaçamento entre os elementos */
+}
+
+.lista-heroes {
+  width: 775px; /* Largura da lista */
+  display: flex;
+}
+
+.info-heroes {
+  flex-grow: 1; /* O info-heroes vai ocupar o espaço restante */
+}
+
 .heroes {
-    margin: 0 0 2em 0;
-    list-style-type: none;
-    padding: 0;
-    width: 15em;
-  }
-  
-  .heroes li {
-    display: flex;
-  }
-  
-  .heroes button {
-    flex: 1;
-    cursor: pointer;
-    position: relative;
-    left: 0;
-    background-color: #EEE;
-    margin: .2em;
-    padding: 0;
-    border-radius: 20px;
-    display: flex;
-    align-items: stretch;
-    height: 1.8em;
-  }
-  
-  .heroes button:hover {
-    color: #2c3a41;
-    background-color: #e6e6e6;
-    left: .1em;
-  }
-  
-  .heroes button:active {
-    background-color: #525252;
-    color: #fafafa;
-  }
-  
-  .heroes button.selected {
-    background-color: black;
-    color: white;
-  }
-  
-  .heroes button.selected:hover {
-    background-color: #505050;
-    color: white;
-  }
-  
-  .heroes button.selected:active {
-    background-color: black;
-    color: white;
-  }
-  
-  .heroes .badge {
-    display: inline-block;
-    font-size: small;
-    color: white;
-    padding: 0.8em 0.7em 0 0.7em;
-    background-color: #405061;
-    line-height: 1em;
-    margin-right: .8em;
-    border-radius: 4px 0 0 4px;
-  }
-  
-  .heroes .name {
-    align-self: center;
-  }
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Exibe os itens da lista em linha */
+  flex-wrap: wrap; /* Permite que os itens quebrem linha, se necessário */
+}
+
+.heroes li {
+  display: flex;
+}
+
+.heroes button {
+  display: flex;
+  flex: 1;
+  cursor: pointer;
+  position: relative;
+  background-color: #EEE;
+  margin: .2em;
+  padding: 0;
+  border-radius: 10px;
+  align-items: stretch;
+  height: 200px;
+  width: 200px;
+}
+
+.heroes button:hover {
+  color: #2c3a41;
+  background-color: #e6e6e6;
+}
+
+.heroes button:active {
+  background-color: #525252;
+  color: #fafafa;
+}
+
+.heroes button.selected {
+  background-color: black;
+  color: white;
+}
+
+.heroes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #405061;
+  line-height: 1em;
+  margin-right: .8em;
+  border-radius: 10px 0 0 10px;
+}
+
+.heroes .name {
+  align-self: center;
+}
